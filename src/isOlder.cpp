@@ -1,7 +1,10 @@
+#include<stdio.h>
 int isOlder(char *dob1, char *dob2)
 {
 	int len1 = 0, len2 = 0, j, yr1 = 0, yr2 = 0, mn1 = 0, mn2 = 0, dy1 = 0, dy2 = 0, temp = 0;
 	int i;
+	if ((dob1 == NULL) || (dob2 == NULL))
+		return -1;
 	for (j = 0; dob1[j] != '\0'; j++)
 	{
 		len1++;
@@ -103,5 +106,9 @@ int isOlder(char *dob1, char *dob2)
 			}
 		}
 
+	}
+	else
+	{
+		return -1;
 	}
 }
