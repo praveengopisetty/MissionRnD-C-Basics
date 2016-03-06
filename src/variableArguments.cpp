@@ -27,12 +27,8 @@ int variableArguments(int arg_count, ...)
 		return -1;
 	}
 	
-	va_start(ap, arg_count);
-	if (va_arg(ap, int) == 0)
-	{
-		return 0;
-	}
-	va_end(ap);
+	
+	
 	va_start(ap, arg_count);
 	for (i = 0; i < arg_count; i++)
 	{
