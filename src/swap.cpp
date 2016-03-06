@@ -11,7 +11,13 @@ ERROR CASES:
 NOTES:
 */
 
+
+
 void swap(int *a, int *b)
 {
-	
+	int c = *a;
+	int d = *b;
+	*a = d;
+	*b = c;
+
 }
